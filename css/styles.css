@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.container{
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px #00000032;
+    width: 520px;
+    height: 665px;
+}
+
+h1{
+    font-family: 'chalkduster';
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 20px;
+}
+
+form{
+    font-family: 'papyrus';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+label{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+input{
+    font-family: 'optima';
+    height: 2.5rem;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: lightgray 1px solid;
+}
+
+#confirm_password{
+    margin-bottom: 27px;
+}
+
+hr{
+    margin-bottom: 5px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 0 10px 1px #6565651f;
+}
+
+button{
+    font-family: 'herculanum';
+    padding: 12px;
+    font-size: 1.3rem;
+    background-color: #7b7b7b;
+    margin-top: 22px;
+    text-align: center;
+    width: 30%;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+}
