@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aubrey&family=Caesar+Dressing&family=Fondamento:ital@0;1&family=Lumanosimo&family=Macondo&family=Pixelify+Sans:wght@400..700&family=Trade+Winds&family=Yeon+Sung&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -22,14 +24,14 @@ body{
 }
 
 h1{
-    font-family: 'chalkduster';
+    font-family: 'caesar dressing';
     font-size: 2.6rem;
     text-align: center;
     padding: 20px;
 }
 
 form{
-    font-family: 'papyrus';
+    font-family: 'macondo';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,17 +41,17 @@ form{
 
 label{
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 input{
-    font-family: 'optima';
+    font-family: 'aubrey';
     height: 2.5rem;
     width: 50%;
     text-align: center;
     padding: 10px;
     margin-bottom: 4px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     border-radius: 10px;
     border: lightgray 1px solid;
 }
@@ -66,7 +68,7 @@ hr{
 }
 
 button{
-    font-family: 'herculanum';
+    font-family: 'pixelify sans';
     padding: 12px;
     font-size: 1.3rem;
     background-color: #035ab1c5;
