@@ -131,7 +131,7 @@ function fPass_V() {
       pswdErr.style.color = "darkred";
     }
     pswd_input.style.borderRadius = "10px";
-    pswd_input.style.borderInlineWidth = "10px";
+    pswd_input.style.borderInlineWidth = "5px";
     pswd_input.style.borderColor = "orangered";
 
     // Check or uppercase letters
@@ -289,7 +289,6 @@ function PassValidate() {
     return true;
   }
 }
-
 
 // Call registerHandlers when the window loads
 window.onload = registerHandlers;
