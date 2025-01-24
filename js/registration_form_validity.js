@@ -13,7 +13,7 @@ function registerHandlers() {
     { id: "email", event: "input", handler: EmailValidate },
     { id: "password", event: "input", handler: fPass_V },
     { id: "confirm_password", event: "input", handler: PassValidate },
-    { id: "password", event: "onblur", handler: PassValidate },
+    // { id: "password", event: "onkeypress", handler: PassValidate},
   ];
 
   // Attach event listeners to elements
@@ -289,6 +289,52 @@ function PassValidate() {
     return true;
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("registration_form");
+  const messageDiv = document.getElementById("message");
+  const loadingIndicator = document.getElementById("loading_indicator");
+  const errorMessage = document.getElementById("error_message");
+
+  form.addEventListener("submit", (event) => {
+    // Prevent default form submission
+    event.preventDefault();
+
+    // Show loading indicator
+    loadingIndicator.style.display = "block";
+
+    // if (!messageDiv || !loadingIndicator) {
+    //     errorMessage.style.display = "none";
+    // }
+
+    // Perform validations
+    const isFirstNameValid = fn_Validate();
+    const isLastNameValid = ln_Validate();
+    const isEmailValid = EmailValidate();
+    const isPasswordValid = fPass_V();
+    const isPasswordMatch = PassValidate();
+
+    if (
+      isFirstNameValid &&
+      isLastNameValid &&
+      isEmailValid &&
+      isPasswordValid &&
+      isPasswordMatch
+    ) {
+      // Simulate successful form submission (replace with actual API call if needed)
+      setTimeout(() => {
+        loadingIndicator.style.display = "none";
+        messageDiv.textContent = "Registration successful!";
+        messageDiv.style.color = "lawngreen";
+        form.reset(); // Clear form fields
+      }, 1000);
+    } else {
+      loadingIndicator.style.display = "none";
+      messageDiv.textContent = "Error Detected!";
+      messageDiv.style.color = "orangered";
+    }
+  });
+});
 
 // Call registerHandlers when the window loads
 window.onload = registerHandlers;

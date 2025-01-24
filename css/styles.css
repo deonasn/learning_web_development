@@ -16,11 +16,11 @@ body{
 }
 
 .container{
-    background-color: #ffffff;
+    background-color: #ffffff1d;
     border-radius: 30px;
     box-shadow: 0 0 10px 5px #00000032;
     width: 520px;
-    height: 665px;
+    height: 655px;
 }
 
 h1{
@@ -45,6 +45,7 @@ label{
 }
 
 input{
+    background-color: #00f7ff2b;
     font-family: 'aubrey';
     height: 2.5rem;
     width: 50%;
@@ -79,4 +80,25 @@ button{
     border: none;
     border-radius: 17px;
     cursor: pointer;
+}
+
+#error_message{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'pixelify sans';
+    /* background-color: gray; */
+    /* color: red; */
+    font-size: 1rem;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 15px;
+    /* box-shadow: 0 0 10px 5px #00000032; */
+    width: 250px;
+    height: 35px;
+}
+
+#loading_indicator, #message{
+    margin-top: 6px;
+    margin-bottom: 6px;
 }

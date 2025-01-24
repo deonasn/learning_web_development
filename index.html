@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/registration_form_validity.js"></script>
     <title>Registration Form</title>
+    <style type="text/css">
+        body {
+            background-image: url('./img/portal-background.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -13,23 +22,27 @@
         <hr>
         <form id="registration_form">
             <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" placeholder="John" required>
+            <input type="text" id="first_name" name="first_name" placeholder="John" value="Deon" required>
 
             <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" placeholder="Wick" required>
+            <input type="text" id="last_name" name="last_name" placeholder="Wick" value="Anoth" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="username@domain.com" required>
+            <input type="email" id="email" name="email" placeholder="username@domain.com" value="deonasn@gmail.com" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="********" required>
+            <input type="password" id="password" name="password" placeholder="********" value="Humanity@1" required>
 
             <label for="confirm_password">Confirm Password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="********" required>
+            <input type="password" id="confirm_password" name="confirm_password" value="Humanity@1" placeholder="********" required>
 
             <hr>
             <button type="submit">Register</button>
-        </form> 
+        </form>
     </div>
+    <div id="error_message" class="error" style="display: none;">
+        <div id="loading_indicator" style="display: none;">Submitting...</div>
+        <div id="message"></div>
+    </div> 
 </body>
 </html>
